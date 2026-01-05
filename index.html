@@ -1,48 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name | Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dominic Arcona — Data Scientist</title>
+  
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; line-height: 1.6; }
-    h1, h2 { color: #333; }
-    .project { margin-bottom: 30px; }
-    img { max-width: 100%; border-radius: 8px; }
-    nav a { margin-right: 15px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin: 10px 0 5px 0;
+      font-size: 2.2em;
+    }
+    p.subtitle {
+      color: #555;
+      font-size: 1.1em;
+      margin-top: 0;
+    }
+
+    nav {
+      text-align: center;
+      margin: 25px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #007acc;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .project-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 15px 0;
+      border-top: 1px solid #ccc;
+      color: #777;
+      font-size: 0.9em;
+    }
   </style>
 </head>
+
 <body>
-  <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-    <img 
-      src="images/DA_headshot.jpeg" 
-      alt="Dominic Arcona headshot"
-      style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
-    
-    <div>
-      <h1 style="margin: 0;">Dominic Arcona</h1>
-      <p style="margin: 5px 0 0 0;">Data Scientist | Applied Math PhD</p>
-    </div>
-  </div>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/DA_headshot.jpeg" alt="Dominic Arcona headshot">
+    <h1>Dominic Arcona</h1>
+    <p class="subtitle">Applied Math PhD & Data Scientist</p>
+    <p>Building data products and analytical tools to drive insight and impact.</p>
+  </header>
+
+  <!-- NAVIGATION -->
   <nav>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <h2 id="about">About</h2>
-  <p>Short bio here. What you study/work on, what excites you, and what roles you’re seeking.</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a data scientist specializing in applied mathematics and data-driven modeling. My strengths include statistical modeling, machine learning, visualization, and translating analytic results into actionable insights.
+      I love solving messy problems with clean analytical solutions, and I’m currently exploring opportunities where I can impact real-world decisions with data.
+    </p>
+  </section>
 
-  <h2 id="projects">Projects</h2>
-  <div class="project">
-    <h3>Project 1 Title</h3>
-    <img src="images/project1.png" alt="Project screenshot">
-    <p>Brief description of what you built, tech used, and outcome. 
-    <a href="https://github.com/yourusername/project1">View on GitHub</a></p>
-  </div>
-  <!-- Repeat for 2–3 projects -->
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, R, SQL</li>
+      <li><strong>Data & ML:</strong> pandas, scikit-learn, TensorFlow, PyTorch</li>
+      <li><strong>Visualization:</strong> Matplotlib, Seaborn, Plotly</li>
+      <li><strong>Cloud / Dev Tools:</strong> Git, GitHub, Docker (optional)</li>
+      <li><strong>Databases / Query:</strong> PostgreSQL, SQLite</li>
+    </ul>
+  </section>
 
-  <h2 id="contact">Contact</h2>
-  <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
-  <p><a href="https://www.linkedin.com/in/yourusername">LinkedIn</a> | <a href="https://github.com/yourusername">GitHub</a></p>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <h3>Project 1: [Project Title]</h3>
+      <img src="images/project1.png" alt="Project Title Screenshot">
+      <p>
+        Brief description of what this project does, the tools you used, and the outcome. Highlight an insight or result here.
+        <br><strong>Tech:</strong> Python, scikit-learn, pandas
+      </p>
+      <p><a href="https://github.com/yourusername/project1" target="_blank">View Code on GitHub</a></p>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <h3>Project 2: [Project Title]</h3>
+      <img src="images/project2.png" alt="Project 2 Screenshot">
+      <p>
+        Another short project story: the problem you solved, why it matters, and what the results were.
+        <br><strong>Tech:</strong> Python, Plotly, Jupyter Notebook
+      </p>
+      <p><a href="https://github.com/yourusername/project2" target="_blank">View Code on GitHub</a></p>
+    </div>
+
+    <!-- Add more project blocks as needed -->
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/yourusername">LinkedIn</a> |
+      <a href="https://github.com/yourusername">GitHub</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Dominic Arcona — Built with GitHub Pages
+  </footer>
+
 </body>
 </html>
