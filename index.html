@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Dominic Arcona — Data Scientist</title>
-  
+  <title>Dominic Arcona</title>
+
   <style>
+    :root {
+      --accent: #1a73e8;
+      --light-gray: #f5f5f5;
+      --border-gray: #ddd;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
       color: #222;
-      max-width: 960px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 15px;
+      line-height: 1.6;
     }
 
-    header {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    h1 {
-      margin: 10px 0 5px 0;
-      font-size: 2.2em;
-    }
-    p.subtitle {
-      color: #555;
-      font-size: 1.1em;
-      margin-top: 0;
-    }
-
+    /* ---------- NAV BAR ---------- */
     nav {
-      text-align: center;
-      margin: 25px 0;
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid var(--border-gray);
+      padding: 10px 20px;
+      z-index: 10;
     }
+
     nav a {
-      margin: 0 15px;
+      margin-right: 20px;
       text-decoration: none;
       font-weight: bold;
-      color: #007acc;
+      color: var(--accent);
     }
+
     nav a:hover {
       text-decoration: underline;
     }
 
+    /* ---------- LAYOUT ---------- */
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
     section {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
-    .project-card {
-      border: 1px solid #ddd;
-      padding: 15px;
+    h2 {
+      border-bottom: 2px solid var(--border-gray);
+      padding-bottom: 5px;
+    }
+
+    /* ---------- HOME ---------- */
+    .home-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .home-header img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .home-text h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .home-text p {
+      margin-top: 8px;
+      color: #555;
+    }
+
+    .links a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- DETAILS BOXES ---------- */
+    details {
+      background: var(--light-gray);
+      border: 1px solid var(--border-gray);
       border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    .project-card h3 {
-      margin-top: 0;
-    }
-    .project-card img {
-      max-width: 100%;
-      border-radius: 6px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      padding: 12px 15px;
+      margin-bottom: 15px;
     }
 
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    details > div {
+      margin-top: 10px;
+    }
+
+    /* ---------- FOOTER ---------- */
     footer {
       text-align: center;
-      margin-top: 50px;
-      padding: 15px 0;
-      border-top: 1px solid #ccc;
+      padding: 20px;
+      border-top: 1px solid var(--border-gray);
       color: #777;
       font-size: 0.9em;
     }
@@ -89,86 +125,168 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="images/DA_headshot.jpeg" alt="Dominic Arcona headshot">
-    <h1>Dominic Arcona</h1>
-    <p class="subtitle">Applied Math PhD & Data Scientist</p>
-    <p>Building data products and analytical tools to drive insight and impact.</p>
-  </header>
-
   <!-- NAVIGATION -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
+    <a href="#home">Home</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#misc">Misc</a>
   </nav>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a data scientist specializing in applied mathematics and data-driven modeling. My strengths include statistical modeling, machine learning, visualization, and translating analytic results into actionable insights.
-      I love solving messy problems with clean analytical solutions, and I’m currently exploring opportunities where I can impact real-world decisions with data.
-    </p>
-  </section>
+  <main>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, R, SQL</li>
-      <li><strong>Data & ML:</strong> pandas, scikit-learn, TensorFlow, PyTorch</li>
-      <li><strong>Visualization:</strong> Matplotlib, Seaborn, Plotly</li>
-      <li><strong>Cloud / Dev Tools:</strong> Git, GitHub, Docker (optional)</li>
-      <li><strong>Databases / Query:</strong> PostgreSQL, SQLite</li>
-    </ul>
-  </section>
+    <!-- HOME -->
+    <section id="home">
+      <div class="home-header">
+        <img src="images/DA_headshot.jpeg" alt="Dominic Arcona headshot" />
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
+        <div class="home-text">
+          <h1>Dominic Arcona</h1>
+          <p>
+            Applied Mathematics PhD student at USC.
+          </p>
 
-    <!-- PROJECT 1 -->
-    <div class="project-card">
-      <h3>Project 1: [Project Title]</h3>
-      <img src="images/project1.png" alt="Project Title Screenshot">
+          <div class="links">
+            <a href="mailto:arcona@usc.edu">Email</a>
+            <a href="https://www.linkedin.com/in/dominic-arcona" target="_blank">LinkedIn</a>
+            <a href="https://github.com/dominicarcona" target="_blank">GitHub</a>
+            <a href="resume_industry.pdf">Industry Resume</a>
+            <a href="cv_academic.pdf">Academic CV</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>About Me</h2>
       <p>
-        Brief description of what this project does, the tools you used, and the outcome. Highlight an insight or result here.
-        <br><strong>Tech:</strong> Python, scikit-learn, pandas
+        I am a PhD student in Applied Mathematics at the University of Southern California graduating in 2026.
+        My main interests lie in probability, combinatorics, and data science. During my four-year experience 
+        as an Analytics Consultant, I applied statistical learning theory to problems facing state and local 
+        tax agencies. Previously, I obtained my M.S. in Statistics from USC and my B.A. in Mathematics and 
+        Chemistry from Dartmouth College.
       </p>
-      <p><a href="https://github.com/yourusername/project1" target="_blank">View Code on GitHub</a></p>
-    </div>
+    </section>
 
-    <!-- PROJECT 2 -->
-    <div class="project-card">
-      <h3>Project 2: [Project Title]</h3>
-      <img src="images/project2.png" alt="Project 2 Screenshot">
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research</h2>
+
       <p>
-        Another short project story: the problem you solved, why it matters, and what the results were.
-        <br><strong>Tech:</strong> Python, Plotly, Jupyter Notebook
+        My research interests lie at the intersection of probabilistic and algebraic combinatorics. I study mixing models
+        for random walks on the symmetric group, which can be understood using Markov Chains or by applying tools from
+        representation theory. 
       </p>
-      <p><a href="https://github.com/yourusername/project2" target="_blank">View Code on GitHub</a></p>
-    </div>
 
-    <!-- Add more project blocks as needed -->
+      <details>
+        <summary>Publications</summary>
+        <div>
+          <ul>
+            <li>Dominic Arcona, <em>Representation theory and cycle statistics for random walks on the symmetric group</em>, preprint available <a href="https://www.arxiv.org/abs/2512.13969" target="_blank">here</a>, 2025.</li>
+            <li>Dominic Arcona, <em>Tensor powers of virtual symmetric group representations encoding permutation cycle type statistics</em>, FPSAC 2026 Extended Abstract Submission, 2025.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
 
-  </section>
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching</h2>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
-    <p>
-      <a href="https://www.linkedin.com/in/yourusername">LinkedIn</a> |
-      <a href="https://github.com/yourusername">GitHub</a>
-    </p>
-  </section>
+      <p>
+        My teaching philosophy emphasizes clarity, intuition, and helping students
+        build confidence in mathematical reasoning through examples and active engagement.
+      </p>
 
-  <!-- FOOTER -->
+      <details>
+        <summary>Courses at USC (Teaching Assistant)</summary>
+        <div>
+          <ul>
+            <li>Probability Theory</li>
+            <li>Linear Algebra</li>
+            <li>Foundations of Statistics</li>
+            <li>Calculus I</li>
+            <li>Calculus III</li>
+            <li>Business Calculus</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <details>
+        <summary>Remote Sellers Database</summary>
+        <div>
+          <p><strong>Context:</strong> A US State tax agency wanted to know which business entities were selling physical products directly to state residents online.</p>
+          <p><strong>Description:</strong> .</p>
+          <p><strong>Tools / Skills:</strong> Python, SQL, linear regression, feature engineering, feature selection, recursive feature elimination, data visualization</p>
+          <p><strong>Outcomes:</strong> .</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Remote Seller Lead Prioritization</summary>
+        <div>
+          <p><strong>Context:</strong> A US State tax agency wanted to know which business entities were selling physical products directly to state residents online.</p>
+          <p><strong>Description:</strong> .</p>
+          <p><strong>Tools / Skills:</strong> Python, SQL, linear regression, feature engineering, feature selection, recursive feature elimination, data visualization</p>
+          <p><strong>Outcomes:</strong> .</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Launching an SME Lending Product</summary>
+        <div>
+          <p><strong>Context:</strong> .</p>
+          <p><strong>Description:</strong> .</p>
+          <p><strong>Tools / Skills:</strong> .</p>
+          <p><strong>Outcomes:</strong> .</p>
+        </div>
+      </details>
+    </section>
+
+    <details>
+        <summary>Physical Activity Classification</summary>
+        <div>
+          <p><strong>Context:</strong> A class project for my Statistical Consulting (MATH 550) Course at USC.</p>
+          <p><strong>Description:</strong> I used the UCI PMAP data set to classify physical activities based on data from wearable sensors.</p>
+          <p><strong>Tools / Skills:</strong> R, data prepocessing, feature engineering, random forest classification, data visualization. </p>
+          <p><strong>Outcomes:</strong> My project and presentation earned top marks and was used as an example for future students taking the course.</p>
+        </div>
+      </details>
+
+    <!-- MISC -->
+    <section id="misc">
+      <h2>Misc</h2>
+
+      <details>
+        <summary>Chess</summary>
+        <div>
+          <p>
+            I enjoy playing chess online and occasionally in person. 
+            Links to my online accounts:
+            Explore what I play (and exploit my more dubious moves): 
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Beach Volleyball</summary>
+        <div>
+          <p>
+            I love to play beach volleyball, and I try to compete regularly in CBVA and AVP tournaments.
+            See my results:
+          </p>
+        </div>
+      </details>
+    </section>
+
+  </main>
+
   <footer>
-    © 2026 Dominic Arcona — Built with GitHub Pages
+    © 2026 Dominic Arcona
   </footer>
 
 </body>
