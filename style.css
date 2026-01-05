@@ -1,0 +1,163 @@
+/* ---------- GLOBAL VARIABLES ---------- */
+:root {
+  --accent: #1a73e8;
+  --light-gray: #f5f5f5;
+  --border-gray: #ddd;
+  --text-gray: #555;
+}
+
+/* ---------- BASE STYLES ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #222;
+  line-height: 1.6;
+  background-color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+h2 {
+  border-bottom: 2px solid var(--border-gray);
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid var(--border-gray);
+  padding: 12px 20px;
+  z-index: 10;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- HOME PAGE HEADER ---------- */
+.home-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.home-header img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home-text h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.home-text p {
+  margin-top: 8px;
+  color: var(--text-gray);
+}
+
+/* ---------- LINKS BAR ---------- */
+.links {
+  margin-top: 10px;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- DETAILS / EXPANDABLE BOXES ---------- */
+details {
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details > div,
+details > ul {
+  margin-top: 10px;
+}
+
+/* ---------- LISTS ---------- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- PROJECT CARDS (optional future use) ---------- */
+.project-card {
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--border-gray);
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 60px;
+}
+
+/* ---------- MOBILE TWEAKS ---------- */
+@media (max-width: 600px) {
+  .home-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
