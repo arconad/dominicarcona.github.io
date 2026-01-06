@@ -168,3 +168,21 @@ footer {
     margin-bottom: 8px;
   }
 }
+
+/* ---------- DARK MODE ---------- */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #eaeaea;
+  --light-gray: #1e1e1e;
+  --border-gray: #333;
+  --text-gray: #aaa;
+}
+
+body.dark nav {
+  background-color: #121212;
+}
+
+body.dark nav a.active {
+  background-color: #333;
+}
+
