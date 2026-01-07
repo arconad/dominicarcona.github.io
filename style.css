@@ -370,3 +370,28 @@ a:hover {
 body.dark .paper-card {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
+
+/* ---------- PUBLICATION LIST ---------- */
+.pub-list {
+  padding-left: 25px;
+}
+
+.pub-list li {
+  margin-bottom: 30px;
+}
+
+.pub-entry {
+  margin-bottom: 6px;
+}
+
+/* Abstract toggle (no box, no border) */
+.pub-abstract summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.pub-abstract p {
+  margin-top: 8px;
+}
+
