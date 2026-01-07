@@ -281,7 +281,7 @@ body.dark nav a.active {
 }
 
 .hero-small {
-  height: 220px;
+  height: 250px;
 }
 
 /* ---------- PAGE-SPECIFIC HERO IMAGES ---------- */
@@ -295,7 +295,7 @@ body.dark nav a.active {
 }
 
 .hero-projects {
-  background-image: url("files/projects-background.jpeg");
+  background-image: url("files/projects-background2.jpeg");
 }
 
 .hero-misc {
