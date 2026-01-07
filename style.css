@@ -258,8 +258,7 @@ body.dark nav a.active {
 /* Hero / Banner */
 .hero {
   width: 100%;
-  height: 350px;
-  background: center / cover no-repeat url("files/background.jpeg");
+  background: center / cover no-repeat;
   position: relative;
   margin-bottom: 40px;
 }
@@ -283,6 +282,27 @@ body.dark nav a.active {
 
 .hero-small {
   height: 220px;
+}
+
+/* ---------- PAGE-SPECIFIC HERO IMAGES ---------- */
+.hero-home {
+  background-image: url("files/hero-background.jpg");
+}
+
+.hero-research {
+  background-image: url("files/research-background.jpeg");
+}
+
+.hero-projects {
+  background-image: url("files/projects-background.jpeg");
+}
+
+.hero-misc {
+  background-image: url("files/misc-background.jpeg");
+}
+
+.hero-teaching {
+  background-image: url("files/teaching-background.jpeg");
 }
 
 /* Accent color for section headings */
@@ -322,4 +342,30 @@ a:hover {
   font-weight: bold;
 }
 
+/* ---------- PAPER CARDS ---------- */
+.paper-card {
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
 
+.paper-abstract {
+  margin-top: 10px;
+}
+
+.paper-abstract summary {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.paper-abstract p {
+  margin-top: 10px;
+}
+
+/* Dark mode refinement */
+body.dark .paper-card {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
