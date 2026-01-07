@@ -125,6 +125,30 @@ nav a:hover {
   }
 }
 
+/* ---------- HOME RIGHT COLUMN CARD ---------- */
+.home-right {
+  flex: 1;
+  text-align: center;
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: 14px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.home-right img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Dark mode: slightly stronger contrast */
+body.dark .home-right {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
 /* ---------- LINKS BAR ---------- */
 .links {
   margin-top: 10px;
