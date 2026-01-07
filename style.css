@@ -133,7 +133,7 @@ nav a:hover {
   border: 1px solid var(--border-gray);
   border-radius: 14px;
   padding: 25px 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .home-right img {
@@ -146,7 +146,7 @@ nav a:hover {
 
 /* Dark mode: slightly stronger contrast */
 body.dark .home-right {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 /* ---------- LINKS BAR ---------- */
