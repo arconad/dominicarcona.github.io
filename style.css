@@ -286,7 +286,8 @@ body.dark nav a.active {
 
 /* ---------- PAGE-SPECIFIC HERO IMAGES ---------- */
 .hero-home {
-  background-image: url("files/hero-background.jpg");
+  height: 350px;
+  background-image: url("files/background.jpeg");
 }
 
 .hero-research {
