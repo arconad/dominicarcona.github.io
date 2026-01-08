@@ -406,3 +406,73 @@ body.dark .paper-card {
   margin-top: 6px;
 }
 
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: var(--card-bg, #f7f7f7);
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark .project-card {
+  background: #1e1e1e;
+}
+
+/* HEADINGS */
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* CONTEXT SENTENCE */
+.project-context {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+body.dark .project-context {
+  color: #bbb;
+}
+
+/* BULLET POINTS */
+.project-points {
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
+}
+
+.project-points li {
+  margin-bottom: 0.4rem;
+}
+
+/* TOOL PILLS */
+.project-tools {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool-pill {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+body.dark .tool-pill {
+  background: #2a2f4a;
+  color: #c7d2fe;
+}
