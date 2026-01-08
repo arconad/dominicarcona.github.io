@@ -6,9 +6,9 @@
   <title>Projects | Dominic Arcona</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  
+
 <script src="script.js"></script>
-  
+
 <body>
 
 <nav>
@@ -22,55 +22,130 @@
 </nav>
 
 <!-- HERO BANNER -->
-  <div class="hero hero-small hero-projects">
-    <div class="hero-overlay">
-      <div class="hero-text">Projects</div>
-    </div>
+<div class="hero hero-small hero-projects">
+  <div class="hero-overlay">
+    <div class="hero-text">Projects</div>
   </div>
-  
+</div>
+
 <main>
-<h2>Projects</h2>
 
-    <details>
-      <summary>Remote Sellers Database</summary>
-      <div>
-        <p><strong>Context:</strong> A US State tax agency wanted to know which business entities were selling physical products directly to state residents online.</p>
-        <p><strong>Description:</strong> .</p>
-        <p><strong>Tools / Skills:</strong> Python, SQL, linear regression, feature engineering, feature selection, recursive feature elimination, data visualization</p>
-        <p><strong>Outcomes:</strong> .</p>
-      </div>
-    </details>
+  <section class="projects-grid">
 
-    <details>
-      <summary>Remote Seller Lead Prioritization</summary>
-      <div>
-        <p><strong>Context:</strong> A US State tax agency wanted to know which business entities were selling physical products directly to state residents online.</p>
-        <p><strong>Description:</strong> .</p>
-        <p><strong>Tools / Skills:</strong> Python, SQL, linear regression, feature engineering, feature selection, recursive feature elimination, data visualization</p>
-        <p><strong>Outcomes:</strong> .</p>
-      </div>
-    </details>
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <h3>Business Licensing Lead Prioritization</h3>
 
-    <details>
-      <summary>Launching an SME Lending Product</summary>
-      <div>
-        <p><strong>Context:</strong> .</p>
-        <p><strong>Description:</strong> .</p>
-        <p><strong>Tools / Skills:</strong> .</p>
-        <p><strong>Outcomes:</strong> .</p>
-      </div>
-    </details>
+      <p class="project-context">
+        A US state tax agency sought to improve tax compliance among businesses selling physical
+        products online to state residents.
+      </p>
 
-    <details>
-      <summary>Physical Activity Classification</summary>
-      <div>
-        <p><strong>Context:</strong> A class project for my Statistical Consulting (MATH 550) Course at USC.</p>
-        <p><strong>Description:</strong> I used the UCI PMAP data set to classify physical activities based on data from wearable sensors.</p>
-        <p><strong>Tools / Skills:</strong> R, data prepocessing, feature engineering, random forest classification, data visualization. </p>
-        <p><strong>Outcomes:</strong> My project and presentation earned top marks and was used as an example for future students taking the course.</p>
+      <ul class="project-points">
+        <li>
+          Identified and acquired high-value external data sources, supplemented by custom
+          web-scraped data, to construct a comprehensive training dataset of remote sellers.
+        </li>
+        <li>
+          Built and deployed regression models in Python to prioritize licensing leads by
+          predicted gross revenue, balancing interpretability with predictive performance.
+        </li>
+        <li>
+          Communicated modeling decisions and results to non-technical stakeholders to maintain
+          buy-in throughout the project lifecycle.
+        </li>
+        <li>
+          Pilot outreach generated over $1M per month in voluntary tax remittance within two years
+          of launch.
+        </li>
+        <li>
+          The project’s success led to adoption by multiple additional state clients and a
+          company-wide “Outcome Award.”
+        </li>
+      </ul>
+
+      <div class="project-tools">
+        <span class="tool-pill">Python</span>
+        <span class="tool-pill">SQL</span>
+        <span class="tool-pill">Linear Regression</span>
+        <span class="tool-pill">Feature Engineering</span>
+        <span class="tool-pill">Model Interpretation</span>
+        <span class="tool-pill">Data Visualization</span>
       </div>
-    </details>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <h3>Launching an SME Lending Product</h3>
+
+      <p class="project-context">
+        A top-five international bank planned to launch a small-business lending product for a
+        targeted customer segment.
+      </p>
+
+      <ul class="project-points">
+        <li>
+          Supported end-to-end product design, including pricing, risk, fraud strategy, and
+          first-year KPI roadmapping.
+        </li>
+        <li>
+          Designed an A/B price-testing framework to be deployed immediately at product launch,
+          ensuring sufficient statistical power for early decision-making.
+        </li>
+        <li>
+          A three-tier pricing structure was selected, enabling rapid learning about optimal
+          pricing while managing downside risk. 
+        </li>
+      </ul>
+
+      <div class="project-tools">
+        <span class="tool-pill">Statistical Analysis</span>
+        <span class="tool-pill">A/B Testing</span>
+        <span class="tool-pill">ANOVA</span>
+        <span class="tool-pill">Excel</span>
+        <span class="tool-pill">PowerPoint</span>
+        <span class="tool-pill">Client Communication</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <h3>Physical Activity Classification</h3>
+
+      <p class="project-context">
+        A course project for Statistical Consulting (MATH 550) at USC.
+      </p>
+
+      <ul class="project-points">
+        <li>
+          Used wearable sensor data from the PAMAP2 dataset to classify physical activities.
+        </li>
+        <li>
+          Performed data preprocessing, feature engineering, and trained random forest classifiers
+          to achieve strong predictive performance.
+        </li>
+        <li>
+          My project presentation earned top marks and was later used as an exemplar for future cohorts.
+        </li>
+      </ul>
+
+      <div class="project-tools">
+        <span class="tool-pill">R</span>
+        <span class="tool-pill">Random Forests</span>
+        <span class="tool-pill">Feature Engineering</span>
+        <span class="tool-pill">Data Cleaning</span>
+        <span class="tool-pill">Data Visualization</span>
+      </div>
+    </div>
+
+  </section>
+
 </main>
+
+<footer>
+  © 2026 Dominic Arcona
+</footer>
 
 </body>
 </html>
+
