@@ -665,17 +665,46 @@ body.dark-mode .interest-card a:hover {
 }
 
 /* Dark Mode Overrides */
+/* --- DARK MODE LEGIBILITY FIXES --- */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0; /* Sets a global light text color for dark mode */
+}
+
+body.dark-mode h2 {
+  color: #ffffff;
+}
+
+/* Fixes the intro text above the cards */
+body.dark-mode .interest-header p {
+  color: #bbbbbb;
+}
+
+/* Fixes the text inside the cards */
 body.dark-mode .interest-card {
-  background: #1e1e1e;
+  background: #252525; 
+  color: #dddddd; /* High-contrast light gray for body text */
   border-left-color: #3794ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .interest-card h3 {
-  color: #eee;
+  color: #ffffff; /* Bright white for sub-headers */
+}
+
+body.dark-mode .interest-card li {
+  color: #dddddd;
 }
 
 body.dark-mode .section-divider {
-  background: #333;
+  background: #333333;
+}
+
+/* Ensures the volleyball photo doesn't look too bright/washed out in dark mode */
+body.dark-mode .misc-img {
+  filter: brightness(0.9);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 /* Mobile Responsiveness */
