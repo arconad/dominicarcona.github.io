@@ -630,13 +630,40 @@ body.dark .tool-pill {
   font-size: 0.95rem;
 }
 
+/* MISC IMAGE FIX */
 .misc-img {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
+  /* Focuses on the top of the image where the ball is */
+  object-position: top; 
   height: 100%;
-  max-height: 300px;
+  /* Increased height to show more of the action */
+  max-height: 450px; 
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: block;
+}
+
+/* INLINE LINK STYLING */
+.interest-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.interest-card a:hover {
+  border-bottom-color: #007bff;
+}
+
+/* DARK MODE SUPPORT FOR INLINE LINKS */
+body.dark-mode .interest-card a {
+  color: #3794ff;
+}
+
+body.dark-mode .interest-card a:hover {
+  border-bottom-color: #3794ff;
 }
 
 /* Dark Mode Overrides */
