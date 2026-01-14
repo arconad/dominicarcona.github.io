@@ -617,8 +617,45 @@ body.dark .tool-pill {
   font-weight: 600;
 }
 
+/* ---------- MISC DARK MODE STYLES ---------- */
+
+/* New style for cards in Dark Mode */
 body.dark .interest-card {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow in dark mode */
+  background-color: #1e1e1e !important; /* Slightly lighter than the body bg */
+  border: 1px solid #333 !important;   /* Subtle border instead of shadow */
+  border-left: 4px solid var(--accent) !important; /* Keep your accent stripe */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Restore light text for Dark Mode cards */
+body.dark .interest-card h3 {
+  color: #ffffff !important;
+}
+
+body.dark .interest-card li, 
+body.dark .interest-card p, 
+body.dark .interest-card strong {
+  color: #cccccc !important; /* Soft gray for readability */
+}
+
+/* Adjust links inside dark cards */
+body.dark .interest-card a {
+  color: var(--accent-light) !important;
+}
+
+body.dark .interest-card a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Adjust photo credit for dark mode visibility */
+body.dark .photo-credit {
+  color: #777;
+}
+
+/* Soften the volleyball image so it's not too piercing */
+body.dark .misc-img {
+  filter: brightness(0.85) contrast(1.1);
 }
 
 /* ---------- MEDIA & IMAGES ---------- */
